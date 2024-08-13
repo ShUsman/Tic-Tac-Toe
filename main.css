@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Press+Start+2P&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: bisque;
+    color: rgb(189, 31, 44);
+    font-family: "Press Start 2P", system-ui;
+}
+
+header {
+   text-align: center;
+   margin-top: 25px;
+   font-size: 28px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    gap: 135px;
+    font-size: 25px
+}
+
+.player {
+    display: flex;
+    justify-content: space-between;
+}
+
+.playerX .playerO {
+    font-size: 29px;
+}
+
+.players {
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+}
+
+.playerOne-chose, .playerTwo-chose {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.start-game {
+    text-align: center;
+    margin: 40px;
+}
+
+.game-hiden {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    top: 0px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    flex-direction: column;
+    gap: 45px;
+}
+
+#game-board {
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    justify-content: center;
+    outline: 3px solid bisque;
+    outline-offset: -1px;
+}
+
+.cell {
+    border: 1px solid black;
+    font-size: 8rem;
+    padding: 22px;
+}
